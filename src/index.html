@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="font-principal bg-background-primary">
+
+<header class="">
+    <div class="flex justify-between items-center p-5 relative">
+        <img src="../assets/logo.svg" alt="imagem do logo">
+        <button class="button-open-menu">
+            <img src="../assets/icon-menu.svg" alt="imagem do menu">
+        </button>
+        <aside class="aside hidden absolute has-checked:hidden top-0 left-1/2">
+            <nav class="flex  flex-col p-5 bg-orange-title_secondary h-screen peer w-75-screen">
+                <input type="checkbox" class="hidden checked:hidden" id="menu_close">
+                <button class="button-close-menu self-end mb-5">
+                    <img src="../assets/icon-menu-close.svg" alt="icone para fechar o menu">
+                </button>
+                <a href="#" class="mb-5">Home</a>
+                <a href="#" class="mb-5">New</a>
+                <a href="#" class="mb-5">Popular</a>
+                <a href="#" class="mb-5">Trending</a>
+                <a href="#" class="mb-5">Categories</a>
+            </nav>
+        </aside>
+    </div>
+
+
+</header>
+<main>
+    <section class="text-wrap flex flex-col justify-center items-center">
+        <img src="../assets/image-web-3-mobile.jpg"  alt="imagem principal">
+        <div class="flex mt-3 flex-col gap-4 p-5 justify-start items-start ">
+            <h1 class="text-4xl font-bold text-left mb-5">  The Bright Future of Web 3.0?</h1>
+            <p class="text-left text-azul-texto font-normal">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="text-left bg-button-primary py-2 px-5 border rounded-lg text-branco-texto">
+                Read more
+            </a>
+        </div>
+    </section>
+    <section class="bg-background-section mx-8 my-4">
+        <div class="flex flex-col p-3 gap-5">
+            <h2 class="text-3xl font-bold text-orange-secondary">New</h2>
+            <article class="border-b">
+                <h2 class="text-xl font-bold mt-5 text-branco-texto"> Hydrogen VS Electric Cars</h2>
+
+                <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+            <article class="border-b">
+                <h2 class="text-xl font-bold mt-5 text-branco-texto">  The Downsides of AI Artistry</h2>
+
+                <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  What are the possible adverse effects of on-demand AI image generation?
+                </p>
+            </article>
+            <article class="">
+                <h2 class="text-xl font-bold mt-5 text-branco-texto">  Is VC Funding Drying Up?</h2>
+                <p class="text-gray-500 mt-5 mb-2 text-azul-texto"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="  mx-8 my-4">
+        <div class="flex flex-col gap-5">
+            <article class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/image-retro-pcs.jpg" alt="imagem da notícia">
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mt-5">  Reviving Retro PCs
+                    </h2>
+                    <p class="text-gray-500 mt-5">  What happens when old PCs are given modern upgrades?
+                    </p>
+                </div>
+            </article>
+            <article class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/image-top-laptops.jpg" alt="imagem da notícia">
+
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mt-5">  Top 10 Laptops of 2022
+                    </h2>
+                    <p class="text-gray-500 mt-5">  Our best picks for various needs and budgets.
+                    </p>
+                </div>
+            </article>
+            <article class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/image-gaming-growth.jpg" alt="imagem da notícia">
+
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mt-5">The Growth of Gaming</h2>
+                    <p class="text-gray-500 mt-5">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+
+            </article>
+        </div>
+    </section>
+</main>
+<!-- fonte inter
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+
+-->
+<script src="index.js"></script>
+</body>
+</html>
