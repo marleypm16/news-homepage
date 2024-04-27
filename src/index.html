@@ -6,105 +6,121 @@
     <title>News Homepage</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body class="font-principal bg-background-primary">
-
-<header class="">
-    <div class="flex justify-between items-center p-5 relative">
-        <img src="../assets/logo.svg" alt="imagem do logo">
-        <button class="button-open-menu">
-            <img src="../assets/icon-menu.svg" alt="imagem do menu">
-        </button>
-        <aside class="aside hidden absolute has-checked:hidden top-0 left-1/2">
-            <nav class="flex  flex-col p-5 bg-orange-title_secondary h-screen peer w-75-screen">
-                <input type="checkbox" class="hidden checked:hidden" id="menu_close">
-                <button class="button-close-menu self-end mb-5">
-                    <img src="../assets/icon-menu-close.svg" alt="icone para fechar o menu">
-                </button>
-                <a href="#" class="mb-5">Home</a>
-                <a href="#" class="mb-5">New</a>
-                <a href="#" class="mb-5">Popular</a>
-                <a href="#" class="mb-5">Trending</a>
-                <a href="#" class="mb-5">Categories</a>
+<body class="font-principal bg-background-primary h-screen ">
+    <header class="mx-12 p-8 mb-5">
+        <div class="flex justify-between items-center  relative">
+            <img src="../assets/logo.svg" alt="imagem do logo">
+            <button class="button-open-menu md:hidden">
+                <img src="../assets/icon-menu.svg" alt="imagem do menu">
+            </button>
+            <nav class="hidden md:flex items-center justify-center  gap-5">
+                <a href="#" class=" hover:text-button-primary ">Home</a>
+                <a href="#" class=" hover:text-button-primary">New</a>
+                <a href="#" class=" hover:text-button-primary">Popular</a>
+                <a href="#" class=" hover:text-button-primary">Trending</a>
+                <a href="#" class=" hover:text-button-primary">Categories</a>
             </nav>
-        </aside>
-    </div>
-
-
-</header>
-<main>
-    <section class="text-wrap flex flex-col justify-center items-center">
-        <img src="../assets/image-web-3-mobile.jpg"  alt="imagem principal">
-        <div class="flex mt-3 flex-col gap-4 p-5 justify-start items-start ">
-            <h1 class="text-4xl font-bold text-left mb-5">  The Bright Future of Web 3.0?</h1>
-            <p class="text-left text-azul-texto font-normal">
-                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-            </p>
-            <a href="#" class="text-left bg-button-primary py-2 px-5 border rounded-lg text-branco-texto">
-                Read more
-            </a>
+            <aside class="aside hidden absolute top-0 left-1/2">
+                <nav class="flex  flex-col p-5 bg-orange-secondary h-screen peer w-75-screen">
+                    <button class="button-close-menu self-end mb-5">
+                        <img src="../assets/icon-menu-close.svg" alt="icone para fechar o menu">
+                    </button>
+                    <a href="#" class="mb-5 hover:text-button-primary">Home</a>
+                    <a href="#" class="mb-5 hover:text-button-primary">New</a>
+                    <a href="#" class="mb-5 hover:text-button-primary">Popular</a>
+                    <a href="#" class="mb-5 hover:text-button-primary">Trending</a>
+                    <a href="#" class="mb-5 hover:text-button-primary">Categories</a>
+                </nav>
+            </aside>
         </div>
-    </section>
-    <section class="bg-background-section mx-8 my-4">
-        <div class="flex flex-col p-3 gap-5">
-            <h2 class="text-3xl font-bold text-orange-secondary">New</h2>
-            <article class="border-b">
-                <h2 class="text-xl font-bold mt-5 text-branco-texto"> Hydrogen VS Electric Cars</h2>
+    </header>
+    <main class=" mx-12  h-full">
+        <div class="lg:flex  lg:items-center  mb-5  ">
+            <section class="text-wrap flex flex-col justify-center  lg:w-2/3 items-center">
+                <div class="h-1/2 w-full   ">
+                    <img class="w-full h-1/5 image" src="../assets/image-web-3-desktop.jpg" alt="imagem principal">
+                </div>
+                <div class="flex mt-5 flex-col lg:flex-row lg:justify-between  md:p-0 gap-4 p-5  justify-start items-start md:items-center ">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-left mb-5">  The Bright Future of Web 3.0?</h1>
+                    <div class="flex sm:items-start md:items-center lg:items-start flex-col ">
+                        <p class=" sm:text-center lg:text-left text-azul-texto mb-3 font-normal">
+                            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                            But is it really fulfilling its promise?
+                        </p>
+                        <a href="#" class="text-center w-2/5 bg-button-primary lg:w-2/5 py-2 px-5 border rounded-lg text-branco-texto hover:bg-background-section">
+                            Read more
+                        </a>
+                    </div>
 
-                <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </article>
-            <article class="border-b">
-                <h2 class="text-xl font-bold mt-5 text-branco-texto">  The Downsides of AI Artistry</h2>
+                </div>
+            </section>
+            <section class="bg-background-section self-start mx-8 lg:mx-3 h-full md:my-10 lg:my-0">
+                <div class="flex flex-col h-full p-3 gap-5">
+                    <h2 class="text-3xl font-bold text-orange-secondary">New</h2>
+                    <article class="border-b">
+                        <a href="#" class="text-xl font-bold mt-5 text-branco-texto hover:text-orange-secondary"> Hydrogen VS Electric Cars</a>
 
-                <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  What are the possible adverse effects of on-demand AI image generation?
-                </p>
-            </article>
-            <article class="">
-                <h2 class="text-xl font-bold mt-5 text-branco-texto">  Is VC Funding Drying Up?</h2>
-                <p class="text-gray-500 mt-5 mb-2 text-azul-texto"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-            </article>
+                        <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </article>
+                    <article class="border-b">
+                        <a href="#" class="text-xl font-bold mt-5 text-branco-texto hover:text-orange-secondary">  The Downsides of AI Artistry</a>
+
+                        <p class="text-gray-500 mt-5 mb-2 text-azul-texto">  What are the possible adverse effects of on-demand AI image generation?
+                        </p>
+                    </article>
+                    <article class="">
+                        <a href="#" class="text-xl font-bold mt-5 text-branco-texto hover:text-orange-secondary">  Is VC Funding Drying Up?</a>
+                        <p class="text-gray-500 mt-5 mb-2 text-azul-texto"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </article>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <section class="  mx-8 my-4">
-        <div class="flex flex-col gap-5">
-            <article class="flex justify-between items-center">
-                <div>
-                    <img src="../assets/image-retro-pcs.jpg" alt="imagem da notícia">
-                </div>
-                <div>
-                    <h2 class="text-xl font-bold mt-5">  Reviving Retro PCs
-                    </h2>
-                    <p class="text-gray-500 mt-5">  What happens when old PCs are given modern upgrades?
-                    </p>
-                </div>
-            </article>
-            <article class="flex justify-between items-center">
-                <div>
-                    <img src="../assets/image-top-laptops.jpg" alt="imagem da notícia">
 
-                </div>
-                <div>
-                    <h2 class="text-xl font-bold mt-5">  Top 10 Laptops of 2022
-                    </h2>
-                    <p class="text-gray-500 mt-5">  Our best picks for various needs and budgets.
-                    </p>
-                </div>
-            </article>
-            <article class="flex justify-between items-center">
-                <div>
-                    <img src="../assets/image-gaming-growth.jpg" alt="imagem da notícia">
+        <section class="  mx-8 my-4">
+            <div class="flex flex-col text-wrap  gap-5 md:flex-row items-start flex-wrap lg:flex-nowrap">
+                <article class="flex justify-between items-start lg:w-1/3">
+                    <div class="">
+                        <img class="max-w-fit lg:max-w-full" src="../assets/image-retro-pcs.jpg" alt="imagem da notícia">
+                    </div>
+                    <div class="ms-5 text-left">
+                        <h2 class="text-3xl text-azul-escuro mb-5">01</h2>
+                        <a href="#" class="text-xl font-bold  hover:text-button-primary">  Reviving Retro PCs
+                        </a>
+                        <p class="text-gray-500 mt-5">  What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
+                </article>
+                <article class="flex justify-between items-start lg:w-1/3">
+                    <div class="">
+                        <img class="max-w-fit lg:max-w-full" src="../assets/image-top-laptops.jpg" alt="imagem da notícia">
 
-                </div>
-                <div>
-                    <h2 class="text-xl font-bold mt-5">The Growth of Gaming</h2>
-                    <p class="text-gray-500 mt-5">How the pandemic has sparked fresh opportunities.</p>
-                </div>
+                    </div>
+                    <div class="ms-5 text-left">
+                        <h2 class="text-3xl text-azul-escuro mb-5">02</h2>
 
-            </article>
-        </div>
-    </section>
-</main>
+                        <a href="#" class="text-xl font-bold  hover:text-button-primary">  Top 10 Laptops of 2022</a>
+                        <p class="text-gray-500 mt-5">  Our best picks for various needs and budgets.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex justify-between items-start lg:w-1/3">
+                    <div class="">
+                        <img class="max-w-fit lg:max-w-full" src="../assets/image-gaming-growth.jpg" alt="imagem da notícia">
+
+                    </div>
+                    <div class="ms-5 text-left">
+                        <h2 class="text-3xl text-azul-escuro mb-5">03</h2>
+                        <a href="#" class="text-xl font-bold  hover:text-button-primary">The Growth of Gaming</a>
+                        <p class="text-gray-500 mt-5">How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+
 <!-- fonte inter
 - Soft orange: hsl(35, 77%, 62%)
 - Soft red: hsl(5, 85%, 63%)
