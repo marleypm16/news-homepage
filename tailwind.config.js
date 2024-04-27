@@ -15,7 +15,8 @@ module.exports = {
           'section' : 'hsl(240, 100%, 5%)'
         },
         azul:{
-          'texto': 'hsl(236, 13%, 42%)'
+          'texto': 'hsl(236, 13%, 42%)',
+          'escuro' : 'hsl(233, 8%, 79%)'
         },
         button:{
           'primary':'hsl(5, 85%, 63%)',
